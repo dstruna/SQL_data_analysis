@@ -3,9 +3,15 @@
 ## 🧠 Project Summary
 This project is part of my journey to become a Data Analyst. I got the data on Kaggle. I downloaded the data and did a bulk import into MSSQL. I used SQL to analyze a dataset of Sample Superstore. Then I made a visualization from the queries in Tableau Public.
 
-## 🔧 Tools Used
+## 🔧 Tools
 - MSSQL
 - Tableau (for final visualization)
+
+## Data Source
+Sample Superstore: [Download here](https://www.kaggle.com/datasets/roopacalistus/superstore).
+The dataset contains sales details of different stores of a supermarket chain that has multiple stores in different parts of the US.
+
+
 
 ## 📌 Objectives
 - Get data
