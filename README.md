@@ -30,15 +30,22 @@ The dataset contains sales details of different stores of a supermarket chain th
    
 ## 📈 Data Analysis results
 1. Which state has the highest sales?
+SQL query:
 ```sql
 SELECT
-   [State]
-   ,ROUND(SUM([Profit]), 2) AS Total_Profit
+   [State],
+   ROUND(SUM([Profit]), 2) AS Total_Profit
 
 FROM [Retail_supermarket].[dbo].[SampleSuperstore]
 	GROUP BY [State]
 	ORDER BY Total_Profit DESC;
 ```
+Visualization:
+
+![Q1](https://github.com/user-attachments/assets/aff8f981-ca43-46bb-9e09-09a63031ef6d)
+
+Visualization in Tableau:
+
 
 ## 📂 Project Structure
 See folders for SQL queries, raw data, results, and visuals.
