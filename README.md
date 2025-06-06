@@ -37,8 +37,8 @@ SELECT
    ROUND(SUM([Profit]), 2) AS Total_Profit
 
 FROM [Retail_supermarket].[dbo].[SampleSuperstore]
-	GROUP BY [State]
-	ORDER BY Total_Profit DESC;
+GROUP BY [State]
+ORDER BY Total_Profit DESC;
 ```
 Visualization:
 
@@ -54,8 +54,8 @@ SELECT
 	[Sub_Category],
 	ROUND(SUM([Profit]), 2) AS Total_Profit
 FROM [Retail_supermarket].[dbo].[SampleSuperstore]
-	GROUP BY [Sub_Category]
-	ORDER BY Total_Profit DESC;
+GROUP BY [Sub_Category]
+ORDER BY Total_Profit DESC;
 ```
 Visualization:
 
@@ -72,9 +72,9 @@ SELECT
 	[State],
 	ROUND(SUM([Profit]), 2) AS Total_Profit
 FROM [Retail_supermarket].[dbo].[SampleSuperstore]
-	GROUP BY [State]
-	HAVING SUM([Profit]) < 0
-	ORDER BY Total_Profit;
+GROUP BY [State]
+HAVING SUM([Profit]) < 0
+ORDER BY Total_Profit;
 ```
 Visualization:
 
@@ -84,6 +84,40 @@ Visualization:
 
 Visualization in Tableau: 
 [Click here](https://public.tableau.com/app/profile/denis.struna/viz/Question3_17492334172120/Q3?publish=yes)
+
+
+## Two questions:
+4. What is profit per unit in each sub_category?
+5. 5. What is Margain ratio per each sub_category?
+
+SQL query:
+```sql
+SELECT
+	Sub_Category,
+	ROUND(SUM(Sales),2) AS Total_sales,							--Show Total sales
+	ROUND(SUM(Profit),2) AS Total_profit,							--Show Total profit
+	SUM(Quantity) AS Sold_items,								--Show Total quantity
+	ROUND(SUM(Sales)/SUM(Quantity), 2) AS Average_sale_price,				--Show Absolute average price per one unit
+	ROUND(SUM(Profit)/SUM(Quantity), 2) AS Average_profit_per_unit,				--Show Absolute average Profit per one unit sold
+	CAST(ROUND(SUM(Profit)/SUM(Sales), 2) * 100 AS nvarchar) + '%' AS Margain_ratio		--Show Margain ratio in %
+
+FROM Retail_supermarket.dbo.SampleSuperstore
+WHERE Quantity > 0 AND Sales > 0
+GROUP BY Sub_Category
+ORDER BY Average_profit_per_unit DESC;
+```
+Visualization:
+
+![Q4](https://github.com/user-attachments/assets/7e961817-915c-4e26-bfba-5c8107835df7)
+
+
+
+
+Visualization in Tableau: 
+[Click here](https://public.tableau.com/app/profile/denis.struna/viz/Question4_17492338293470/Q4?publish=yes)
+
+
+
 
 
 ## 📂 Project Structure
