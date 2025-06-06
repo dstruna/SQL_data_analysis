@@ -9,9 +9,8 @@ This project is part of my journey to become a Data Analyst. I got the data on K
 
 ## Data Source
 Sample Superstore: [Download here](https://www.kaggle.com/datasets/roopacalistus/superstore).
+
 The dataset contains sales details of different stores of a supermarket chain that has multiple stores in different parts of the US.
-
-
 
 ## 📌 Objectives
 - Get data
@@ -29,6 +28,17 @@ The dataset contains sales details of different stores of a supermarket chain th
 7. Which shipping mode is the most used and most profitable?
 8. In which state is highest price for item in each sub_category?
    
+## 📈 Data Analysis results
+1. Which state has the highest sales?
+```sql
+SELECT
+   [State]
+   ,ROUND(SUM([Profit]), 2) AS Total_Profit
+
+FROM [Retail_supermarket].[dbo].[SampleSuperstore]
+	GROUP BY [State]
+	ORDER BY Total_Profit DESC;
+```
 
 ## 📂 Project Structure
 See folders for SQL queries, raw data, results, and visuals.
