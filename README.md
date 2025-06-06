@@ -17,8 +17,8 @@ This project is part of my journey to become a Data Analyst. I got the data on K
 1. Which state has the highest sales?
 2. Which sub_category has the highest profit?
 3. Which states are generating losses?
-4.0 What is profit per unit in each sub_category?
-4.1 What is Margain ratio per each sub_category?
+4..0 What is profit per unit in each sub_category?
+4..1 What is Margain ratio per each sub_category?
 5. Does a higher discount reduce profit?
 6. Which shipping mode is the most used and most profitable?
 7. In which state is highest price for item in each sub_category?
