@@ -44,7 +44,8 @@ Visualization:
 
 ![Q1](https://github.com/user-attachments/assets/aff8f981-ca43-46bb-9e09-09a63031ef6d)
 
-Visualization in Tableau:
+Visualization in Tableau: 
+[Click here](https://public.tableau.com/app/profile/denis.struna/viz/Question1_17492323532630/Q1)
 
 
 ## 📂 Project Structure
