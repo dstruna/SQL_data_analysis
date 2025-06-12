@@ -1,7 +1,7 @@
 # 📊 SQL Data Analysis Project
 
 ## 🧠 Project Summary
-This project is part of my journey to become a Data Analyst. I got the data on Kaggle. I downloaded the data and did a bulk import into MSSQL. I used SQL to analyze a dataset of Sample Superstore. Then I made a visualization from the queries in Tableau Public.
+This project is part of my journey to become a Data Analyst. I got the dataset on Kaggle. I downloaded the data and did a bulk import into MSSQL. I used SQL to analyze a dataset of Sample Superstore. Then I made a visualization from the queries in Tableau Public.
 
 ## 🔧 Tools
 - MSSQL
@@ -80,15 +80,13 @@ Visualization:
 
 ![Q3](https://github.com/user-attachments/assets/28b49a5d-d00e-4d0b-83fd-b89015327935)
 
-
-
 Visualization in Tableau: 
 [Click here](https://public.tableau.com/app/profile/denis.struna/viz/Question3_17492334172120/Q3?publish=yes)
 
 
 ## Two questions:
 4. What is profit per unit in each sub_category?
-5. 5. What is Margain ratio per each sub_category?
+5. What is Margain ratio per each sub_category?
 
 SQL query:
 ```sql
@@ -109,9 +107,6 @@ ORDER BY Average_profit_per_unit DESC;
 Visualization:
 
 ![Q4](https://github.com/user-attachments/assets/7e961817-915c-4e26-bfba-5c8107835df7)
-
-
-
 
 Visualization in Tableau: 
 [Click here](https://public.tableau.com/app/profile/denis.struna/viz/Question4_17492338293470/Q4?publish=yes)
