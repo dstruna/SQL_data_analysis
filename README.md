@@ -24,9 +24,8 @@ The dataset contains sales details of different stores of a supermarket chain th
 3. Which states are generating losses?
 4. What is profit per unit in each sub_category?
 5. What is Margain ratio per each sub_category?
-6. Does a higher discount reduce profit?
-7. Which shipping mode is the most used and most profitable?
-8. In which state is highest price for item in each sub_category?
+6. Which shipping mode is the most used and most profitable?
+7. In which state is highest price for item in each sub_category?
 
 # 📈 Data Analysis results
 ## 1. Which state has the highest sales?
@@ -109,6 +108,15 @@ Visualization:
 Visualization in Tableau: 
 [Click here](https://public.tableau.com/app/profile/denis.struna/viz/Question4_17492338293470/Q4?publish=yes)
 
+
+## 6. Which shipping mode is the most used and most profitable?
+SQL query:
+```sql
+
+
+
+
+```
 
 
 
