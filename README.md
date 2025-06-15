@@ -42,7 +42,6 @@ ORDER BY Total_Profit DESC;
 ```
 Visualization:
 
-![Q1](https://github.com/user-attachments/assets/aff8f981-ca43-46bb-9e09-09a63031ef6d)
 [![Q1](Q1.png)](Q1.png)
 
 Visualization in Tableau: 
@@ -60,8 +59,7 @@ ORDER BY Total_Profit DESC;
 ```
 Visualization:
 
-![Q2](https://github.com/user-attachments/assets/0ee070cb-afd6-415a-8a2c-a16f5567b1bb)
-
+[![Q2](Q2.png)](Q2.png)
 
 Visualization in Tableau: 
 [Click here](https://public.tableau.com/app/profile/denis.struna/viz/Question2_17492332552080/Q2?publish=yes)
@@ -79,8 +77,7 @@ ORDER BY Total_Profit;
 ```
 Visualization:
 
-![Q3](https://github.com/user-attachments/assets/28b49a5d-d00e-4d0b-83fd-b89015327935)
-
+[![Q3](Q3.png)](Q3.png)
 Visualization in Tableau: 
 [Click here](https://public.tableau.com/app/profile/denis.struna/viz/Question3_17492334172120/Q3?publish=yes)
 
@@ -107,7 +104,7 @@ ORDER BY Average_profit_per_unit DESC;
 ```
 Visualization:
 
-![Q4](https://github.com/user-attachments/assets/7e961817-915c-4e26-bfba-5c8107835df7)
+[![Q4](Q4.png)](Q4.png)
 
 Visualization in Tableau: 
 [Click here](https://public.tableau.com/app/profile/denis.struna/viz/Question4_17492338293470/Q4?publish=yes)
