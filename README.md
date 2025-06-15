@@ -112,13 +112,21 @@ Visualization in Tableau:
 ## 6. Which shipping mode is the most used and most profitable?
 SQL query:
 ```sql
-
-
-
-
+SELECT
+	Ship_Mode,
+	COUNT(Ship_Mode) AS Number_of_each_shipping,
+	FORMAT(1.0 * COUNT(Ship_Mode) / SUM(COUNT(Ship_Mode)) OVER(), 'N3') AS Share_of_total_shipping,
+	ROUND(SUM(Profit), 2) AS Profit_per_shipping,
+	ROUND(SUM(Profit)/SUM(SUM(Profit)) OVER(), 2)AS Share_of_total_profit
+FROM SampleSuperstore
+GROUP BY Ship_Mode
+ORDER BY Number_of_each_shipping DESC;
 ```
+Visualization:
+[![Q6](Q6.png)](Q6.png)
 
-
+Visualization in Tableau: 
+[Click here](https://public.tableau.com/app/profile/denis.struna/viz/Question6_seperated/Dashboard1?publish=yes)
 
 
 ## 📂 Project Structure
