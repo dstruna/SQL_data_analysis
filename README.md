@@ -29,6 +29,8 @@ The dataset contains sales details of different stores of a supermarket chain th
 
 # 📈 Data Analysis results
 ## 1. Which state has the highest sales?
+This question helps identify the most valuable geographic market in terms of total revenue. Understanding top-performing states allows businesses to allocate resources more effectively and replicate success in other regions.
+
 SQL query:
 ```sql
 SELECT
@@ -50,6 +52,8 @@ Visualization in Tableau:
 [Click here](https://public.tableau.com/app/profile/denis.struna/viz/Question1_17492323532630/Q1)
 
 ## 2. Which sub_category has the highest profit?
+By isolating the most profitable product sub-category, this insight supports decisions around inventory focus, marketing efforts, and pricing strategies for maximizing returns.
+
 SQL query:
 ```sql
 SELECT
@@ -67,6 +71,8 @@ Visualization in Tableau:
 [Click here](https://public.tableau.com/app/profile/denis.struna/viz/Question2_17492332552080/Q2?publish=yes)
 
 ## 3. Which states are generating losses?
+Identifying states with negative profits is critical for risk management. It highlights areas that may suffer from high operational costs, poor customer engagement, or inefficient logistics.
+
 SQL query:
 ```sql
 SELECT
@@ -89,7 +95,10 @@ Visualization in Tableau:
 
 ## Two questions:
 4. What is profit per unit in each sub_category?
+Calculating profit per unit helps evaluate product efficiency and pricing effectiveness. It reveals which products provide the most return relative to volume sold.
+   
 5. What is Margain ratio per each sub_category?
+Margin ratio shows how much of the revenue is actual profit. This helps prioritize products that not only sell well but also maintain a healthy profit margin.
 
 SQL query:
 ```sql
@@ -116,6 +125,8 @@ Visualization in Tableau:
 
 
 ## 6. Which shipping mode is the most used and most profitable?
+This question combines operational and financial performance to identify the shipping method that balances customer preference and company profitability.
+
 SQL query:
 ```sql
 SELECT
@@ -136,6 +147,8 @@ Visualization in Tableau:
 
 
 ## 7. In which state is highest price for item in each sub_category?
+This question explores regional pricing trends and purchasing behavior. It can help tailor pricing strategies or detect outliers in pricing data.
+
 SQL query:
 ```sql
 WITH RankedPrices AS(
