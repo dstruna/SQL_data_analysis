@@ -179,8 +179,3 @@ Visualization:
 Visualization in Tableau: 
 [Click here](https://public.tableau.com/app/profile/denis.struna/viz/Question4_17492338293470/Q7?publish=yes)
 
-
-## 📂 Project Structure
-See folders for SQL queries, raw data, results, and visuals.
-
-
