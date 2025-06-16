@@ -44,15 +44,9 @@ Visualization:
 [![Q1](Q1.png)](Q1.png)
 
 
-
-
-
-
-
-
-
-
-
+<br>
+<br>
+<br>
 
 Visualization in Tableau: 
 [Click here](https://public.tableau.com/app/profile/denis.struna/viz/Question1_17492323532630/Q1)
