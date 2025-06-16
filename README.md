@@ -43,6 +43,7 @@ Visualization:
 
 [![Q1](Q1.png)](Q1.png)
 
+
 Visualization in Tableau: 
 [Click here](https://public.tableau.com/app/profile/denis.struna/viz/Question1_17492323532630/Q1)
 
@@ -77,6 +78,9 @@ ORDER BY Total_Profit;
 Visualization:
 
 [![Q3](Q3.png)](Q3.png)
+
+
+
 Visualization in Tableau: 
 [Click here](https://public.tableau.com/app/profile/denis.struna/viz/Question3_17492334172120/Q3?publish=yes)
 
