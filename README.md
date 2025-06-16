@@ -135,6 +135,38 @@ Visualization in Tableau:
 [Click here](https://public.tableau.com/app/profile/denis.struna/viz/Question6_seperated/Dashboard1?publish=yes)
 
 
+## 7. In which state is highest price for item in each sub_category?
+SQL query:
+```sql
+WITH RankedPrices AS(
+SELECT
+	Sub_Category,
+	State,
+	ROUND(Sales/Quantity, 2) AS Product_price,
+	
+	RANK() OVER(
+		PARTITION BY Sub_Category
+		ORDER BY Sales/Quantity DESC
+	) AS Rank_in
+	FROM SampleSuperstore
+	WHERE Quantity > 0 
+)		
+SELECT
+	DISTINCT Sub_Category,
+	State,
+	ROUND(Product_price, 2) AS Highest_unit_price
+
+FROM RankedPrices
+WHERE Rank_in = 1
+ORDER BY Highest_unit_price DESC;
+```
+Visualization:
+[![Q7](Q7.png)](Q7.png)
+
+Visualization in Tableau: 
+[Click here](https://public.tableau.com/app/profile/denis.struna/viz/Question4_17492338293470/Q7?publish=yes)
+
+
 ## 📂 Project Structure
 See folders for SQL queries, raw data, results, and visuals.
 
